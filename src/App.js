@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
-
+import "./App.css";
+import { Gallery } from "./components/gallery.jsx";
+import { TopHeader } from "./components/TopHeader.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Templates from "./components/Templates.jsx";
 function App() {
   return (
     <div>
-      Test Commit
+      <TopHeader />
+      <Templates />
     </div>
   );
 }
