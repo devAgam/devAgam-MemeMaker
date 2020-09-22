@@ -1,18 +1,12 @@
-import React from "react";
-import { Container, Jumbotron } from "react-bootstrap";
+import React from 'react'
+import { Header, Icon, Image } from 'semantic-ui-react'
 
-export const TopHeader = () => {
-  return (
-    <div>
-      <Jumbotron fluid>
-        <Container>
-          <h1>devAgam-MemeMaker</h1>
-          <p>
-            A MemeMaker made in react as a little side project to experiment
-            with a few tedious react hooks
-          </p>
-        </Container>
-      </Jumbotron>
-    </div>
-  );
-};
+const TopHeader = () => (
+  <div>
+    <Header as='h2' icon textAlign='center'>
+      <Header.Content>MemeMaker by devAgam</Header.Content>
+    </Header>
+  </div>
+)
+
+export default TopHeader

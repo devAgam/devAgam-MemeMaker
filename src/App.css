@@ -87,7 +87,15 @@ div.desc {
 
 .column {
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 5px;
+
   
+}
+
+.imgDiv{
+  width:250px; /* or whatever width you want. */
+  max-width:250px; /* or whatever width you want. */
+  display: inline-block;
+
 }

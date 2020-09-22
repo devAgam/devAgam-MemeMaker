@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Col, Image } from "react-bootstrap";
+import { Card, Image } from "semantic-ui-react";
+import { LazyLoad } from "react-lazy-load";
+import LoaderComp from "./Loader";
 
 const Templates = () => {
   const [memes, setMemes] = useState([]);
@@ -30,22 +32,12 @@ const Templates = () => {
       {memes &&
         memes.map((temps) => (
           <div className="column">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={temps.url} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <Image src={temps.url} />
           </div>
         ))}
     </div>
   ) : (
-    <div> </div>
+    <LoaderComp />
   );
 };
 
