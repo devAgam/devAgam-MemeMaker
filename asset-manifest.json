@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/devAgam-MemeMaker/static/css/main.050523cc.chunk.css",
-    "main.js": "/devAgam-MemeMaker/static/js/main.8633870a.chunk.js",
-    "main.js.map": "/devAgam-MemeMaker/static/js/main.8633870a.chunk.js.map",
+    "main.css": "/devAgam-MemeMaker/static/css/main.4f69ec8c.chunk.css",
+    "main.js": "/devAgam-MemeMaker/static/js/main.e40333a8.chunk.js",
+    "main.js.map": "/devAgam-MemeMaker/static/js/main.e40333a8.chunk.js.map",
     "runtime-main.js": "/devAgam-MemeMaker/static/js/runtime-main.a8d35285.js",
     "runtime-main.js.map": "/devAgam-MemeMaker/static/js/runtime-main.a8d35285.js.map",
-    "static/js/2.a5cb9933.chunk.js": "/devAgam-MemeMaker/static/js/2.a5cb9933.chunk.js",
-    "static/js/2.a5cb9933.chunk.js.map": "/devAgam-MemeMaker/static/js/2.a5cb9933.chunk.js.map",
+    "static/css/2.7ad624c8.chunk.css": "/devAgam-MemeMaker/static/css/2.7ad624c8.chunk.css",
+    "static/js/2.7640fb35.chunk.js": "/devAgam-MemeMaker/static/js/2.7640fb35.chunk.js",
+    "static/js/2.7640fb35.chunk.js.map": "/devAgam-MemeMaker/static/js/2.7640fb35.chunk.js.map",
     "index.html": "/devAgam-MemeMaker/index.html",
-    "precache-manifest.2c12711cd4855567bd621adad47fde88.js": "/devAgam-MemeMaker/precache-manifest.2c12711cd4855567bd621adad47fde88.js",
+    "precache-manifest.259ab35bf8671c394b690348741826d1.js": "/devAgam-MemeMaker/precache-manifest.259ab35bf8671c394b690348741826d1.js",
     "service-worker.js": "/devAgam-MemeMaker/service-worker.js",
-    "static/css/main.050523cc.chunk.css.map": "/devAgam-MemeMaker/static/css/main.050523cc.chunk.css.map",
-    "static/js/2.a5cb9933.chunk.js.LICENSE.txt": "/devAgam-MemeMaker/static/js/2.a5cb9933.chunk.js.LICENSE.txt"
+    "static/css/2.7ad624c8.chunk.css.map": "/devAgam-MemeMaker/static/css/2.7ad624c8.chunk.css.map",
+    "static/css/main.4f69ec8c.chunk.css.map": "/devAgam-MemeMaker/static/css/main.4f69ec8c.chunk.css.map",
+    "static/js/2.7640fb35.chunk.js.LICENSE.txt": "/devAgam-MemeMaker/static/js/2.7640fb35.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/devAgam-MemeMaker/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.a8d35285.js",
-    "static/js/2.a5cb9933.chunk.js",
-    "static/css/main.050523cc.chunk.css",
-    "static/js/main.8633870a.chunk.js"
+    "static/css/2.7ad624c8.chunk.css",
+    "static/js/2.7640fb35.chunk.js",
+    "static/css/main.4f69ec8c.chunk.css",
+    "static/js/main.e40333a8.chunk.js"
   ]
 }
