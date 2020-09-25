@@ -1,9 +1,10 @@
 import React from "react";
 import { Tab } from "semantic-ui-react";
 import Templates from "./Templates";
+import { TemplatesInit } from "./TemplatesInit.jsx";
 import MyProfile from "./MyProfile";
 const panes = [
-  { menuItem: "Templates", render: () => <Templates /> },
+  { menuItem: "Templates", render: () => <TemplatesInit /> },
   { menuItem: "My Profile", render: () => <MyProfile /> },
 ];
 

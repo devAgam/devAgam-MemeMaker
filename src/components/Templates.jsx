@@ -1,44 +1,35 @@
-import React, { useEffect, useState } from "react";
-import { Card, Image } from "semantic-ui-react";
+import React, { useEffect, useState, Component } from "react";
+import { Card, Image, Button } from "semantic-ui-react";
 import { LazyLoad } from "react-lazy-load";
 import LoaderComp from "./Loader";
+import { openModal } from "../Modals/modalActions.js";
+import { connect } from "react-redux";
 
-const Templates = () => {
-  const [memes, setMemes] = useState([]);
-  const [memeIndex, setMemeIndex] = useState(0);
-
-  const shuffleMemes = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * i);
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-  };
-
-  useEffect(() => {
-    fetch("https://api.imgflip.com/get_memes").then((res) => {
-      res.json().then((res) => {
-        const _memes = res.data.memes;
-        shuffleMemes(_memes);
-        setMemes(_memes);
-        console.log(_memes);
-      });
-    });
-  }, []);
-
-  return memes.length ? (
-    <div>
-      {memes &&
-        memes.map((temps) => (
-          <div className="column">
-            <Image src={temps.url} />
-          </div>
-        ))}
-    </div>
-  ) : (
-    <LoaderComp />
-  );
+const actions = {
+  openModal,
 };
 
-export default Templates;
+class Templates extends Component {
+  render() {
+    const { memes, openModal } = this.props;
+    return memes.length ? (
+      <div>
+        {memes &&
+          memes.map((temps) => (
+            <div className="column" onClick={() => openModal("TestModal", { data: 42 })}>
+              <Image src={temps.url}  />
+              <Button
+                
+                color="teal"
+                content="Open Modal"
+              />
+            </div>
+          ))}
+      </div>
+    ) : (
+      <LoaderComp />
+    );
+  }
+}
+export default connect(null, actions)(Templates);
+//onClick={() => openModal("testModal", { data: 42 })}
